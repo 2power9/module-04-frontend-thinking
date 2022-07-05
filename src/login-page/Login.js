@@ -1,15 +1,16 @@
 import React from 'react';
 import "./Login.css";
+import { loginURL } from "../spotify";
 
 function Login() {
   return (
 	<div className='login'>
       
       {/* spotify-clone logo */}
-      <img src="./media/black-spotify-with-text.png" color="white" alt="" width="318px" />
+      <img src="./media/white-spotify-with-text.png" alt="" width="318px" />
       
       {/* spotify-clone button login */}
-      <a>LOGIN WITH SPOTIFY</a>
+      <a href={loginURL}>LOGIN WITH SPOTIFY</a>
 
 	</div>
   )

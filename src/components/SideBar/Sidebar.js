@@ -4,10 +4,10 @@ import HomeIcon from '@mui/icons-material/Home';
 import SearchIcon from '@mui/icons-material/Search';
 import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
 
-import SidebarOption from './SidebarOption';
+import SidebarOption from '../SidebarOption/SidebarOption';
 import './Sidebar.css';
-import { useDataLayerValue } from '../helper/data-layer';
-import sideBarLogo from "../media/white-spotify-with-text.png";
+import { useDataLayerValue } from '../../helper/dataLayer';
+import sideBarLogo from "../../assets/images/white-spotify-with-text.png";
 
 function Sidebar() {
   const [ { playlists }, dispatch] = useDataLayerValue();

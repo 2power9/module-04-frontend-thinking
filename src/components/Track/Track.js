@@ -1,7 +1,7 @@
 import React from 'react';
-import './TrackComponent.css';
+import './Track.css';
 
-function TrackComponent({ track }) {
+function Track({ track }) {
 	console.log("track: " + track);
   return (
 	<div className="track-component">
@@ -16,4 +16,4 @@ function TrackComponent({ track }) {
   )
 }
 
-export default TrackComponent;
+export default Track;

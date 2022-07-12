@@ -13,7 +13,8 @@
 .sidebar-logo {
 	object-fit: contain;
 	height: 70px;
-	width: 100px;
+	padding-top: 6px;
+	padding-bottom: 6px;
 }
 
 .sidebar-title {

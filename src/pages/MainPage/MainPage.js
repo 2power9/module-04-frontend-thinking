@@ -1,7 +1,5 @@
 import React from 'react';
-import Body from '../components/Body';
-import Sidebar from '../components/Sidebar';
-import Footer from '../components/Footer';
+import { Sidebar, Body, Footer } from "../../components";
 import "./MainPage.css";
 
 function MainPage({ spotify }) {

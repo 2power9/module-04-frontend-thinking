@@ -2,7 +2,7 @@ export const authEndpoint = "https://accounts.spotify.com/authorize";
 const redirectURI = "http://localhost:3000/";
 const clientID  = "8040c6582b4747d48a36cc99fb428d53";
 
-const scope = [
+const AUTH_SCOPE = [
 	"user-read-currently-playing",
 	"user-read-recently-played",
 	"user-read-playback-state",
@@ -21,5 +21,5 @@ export const getTokenFromURL = () => {
 		}, {});
 }
 
-export const loginURL = `${authEndpoint}?client_id=${clientID}&redirect_uri=${redirectURI}&scope=${scope.join(
+export const loginURL = `${authEndpoint}?client_id=${clientID}&redirect_uri=${redirectURI}&scope=${AUTH_SCOPE.join(
 	"%20")}&response_type=token&show_dialog=true`;

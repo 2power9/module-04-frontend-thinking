@@ -1,3 +1,5 @@
+import { API_OPTIONS } from "./constant";
+
 export const initialState = {
 	user: null,
 	playlists: [],
@@ -8,31 +10,31 @@ export const initialState = {
 
 const reducer = (state, action) => {
 	switch (action.type) {
-		case 'SET_TOKEN':
+		case API_OPTIONS.SET_TOKEN:
 			return {
 				...state,
 				token: action.token
 			};
 
-		case 'SET_USER':
+		case API_OPTIONS.SET_USER:
 			return  {
 				...state,
 				user: action.user
 			};
 
-		case 'SET_PLAYLISTS':
+		case API_OPTIONS.SET_PLAYLISTS:
 			return {
 				...state,
 				playlists: action.playlists
 			};
 
-		case 'SET_STATIC_PLAYLIST':
+		case API_OPTIONS.SET_STATIC_PLAYLIST:
 			return {
 				...state,
 				staticPlaylist: action.staticPlaylist
 			}
 		
-		case 'SET_STATIC_TRACK':
+		case API_OPTIONS.SET_STATIC_TRACK:
 			return {
 				...state,
 				staticTrack: action.staticTrack

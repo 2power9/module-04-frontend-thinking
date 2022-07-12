@@ -2,7 +2,7 @@ import { Search } from '@mui/icons-material';
 import { Avatar } from '@mui/material';
 import React from 'react';
 import './Header.css';
-import { useDataLayerValue} from '../helper/data-layer';
+import { useDataLayerValue} from '../../helper/dataLayer';
 
 function Header() {
 	const [{ user }, dispatch] = useDataLayerValue();

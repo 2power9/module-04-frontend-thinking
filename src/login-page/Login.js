@@ -7,7 +7,7 @@ function Login() {
 	<div className='login'>
       
       {/* spotify-clone logo */}
-      <img src="./media/white-spotify-with-text.png" alt="" width="318px" />
+      <img src="./media/white-spotify-with-text.png" alt="" width="100px" />
       
       {/* spotify-clone button login */}
       <a href={loginURL}>LOGIN WITH SPOTIFY</a>

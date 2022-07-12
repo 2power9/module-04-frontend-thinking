@@ -1,8 +1,8 @@
 import { Favorite, MoreHoriz, PlayCircleFilled } from '@mui/icons-material';
 import React from 'react';
-import { useDataLayerValue } from '../data-layer';
-import Header from '../header-component/Header';
-import TrackComponent from '../track-component/TrackComponent';
+import { useDataLayerValue } from '../helper/data-layer';
+import Header from './Header';
+import TrackComponent from './TrackComponent';
 import './Body.css';
 
 function Body({ spotify }) {

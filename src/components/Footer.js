@@ -8,7 +8,7 @@ import RepeatIcon from '@mui/icons-material/Repeat';
 import './Footer.css';
 import { Grid, Slider } from '@mui/material';
 import { PlaylistPlay, VolumeDown } from '@mui/icons-material';
-import { useDataLayerValue } from '../data-layer';
+import { useDataLayerValue } from '../helper/data-layer';
 
 function Footer({ spotify }) {
   const [ { staticTrack }, dispatch] = useDataLayerValue();

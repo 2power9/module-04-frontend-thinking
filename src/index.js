@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { DataLayer } from './data-layer';
+import { DataLayer } from './helper/data-layer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

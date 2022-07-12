@@ -2,11 +2,12 @@
 	display: grid;
 	place-items: center;
 	height: 100vh;
+	width: 100%;
 	background-color: black;
 }
 
 .login > img {
-	width: 100%;
+	width: 500px;
 }
 
 .login > a {

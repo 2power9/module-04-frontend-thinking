@@ -1,13 +1,11 @@
 # module-04-frontend-thinking
+
 Code my favourite website
 
 ## Acknowledgements
 
-## What I learned 
+Thank to my mentor [@huyvha](huyvha@vng.com.vn) and [@namlh4](namlh4@vng.com.vn) to help me improve my knowledge about React.
 
-- User authentication
-- Using Spotify APIs
-- Responsive design
-- Material UI
-- React Context API
-- React Hooks Functional (Hooks, State)
+## Solution
+
+A music website base on Spotify UIs.

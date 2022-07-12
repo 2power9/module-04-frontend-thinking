@@ -5,12 +5,12 @@ import SearchIcon from '@mui/icons-material/Search';
 import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
 
 import SidebarOption from '../SidebarOption/SidebarOption';
-import './Sidebar.css';
-import { useDataLayerValue } from '../../helper/dataLayer';
+import { useDataLayerValue } from '../../helper';
 import sideBarLogo from "../../assets/images/white-spotify-with-text.png";
+import './Sidebar.css';
 
 function Sidebar() {
-  const [ { playlists }, dispatch] = useDataLayerValue();
+  const [{ playlists }] = useDataLayerValue();
  
   return (
 	<div className="sidebar">

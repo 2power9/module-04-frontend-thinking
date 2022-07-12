@@ -2,10 +2,10 @@ import { Search } from '@mui/icons-material';
 import { Avatar } from '@mui/material';
 import React from 'react';
 import './Header.css';
-import { useDataLayerValue} from '../../helper/dataLayer';
+import { useDataLayerValue } from '../../helper';
 
 function Header() {
-	const [{ user }, dispatch] = useDataLayerValue();
+	const [{ user }] = useDataLayerValue();
 
 	return (
 		<div className="header">

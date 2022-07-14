@@ -43,6 +43,7 @@ const reducer = (state, action) => {
 		default:
 			return state;
 	}
+	return null;
 }
 
 export default reducer;

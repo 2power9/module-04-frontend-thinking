@@ -3,7 +3,7 @@ import './Track.css';
 
 function Track({ track }) {
 	function getFirstImage(track) {
-		if (!track || !track.album || track.album.images.length <= 0) {
+		if (!track || !track?.album || track?.album?.images?.length <= 0) {
 			return "";
 		}
 		return track.album.images[0].url;
@@ -17,22 +17,23 @@ function Track({ track }) {
 	}
 
 	function getArtists(track) {
-		if (!track || track.artists.length <= 0) {
+		if (!track.artists?.length || track.artists?.length <= 0) {
 			return [];
 		}
+
 		return track.artists;
 	}
 
-	function showArtists(artists) {
-		return artists.map((artist) => artist.name).join(", ");
-	}
+	// function showArtists(artists) {
+	// 	return artists.map((artist) => artist.name).join(", ");
+	// }
 
   return (
 	<div className="track-component">
 		<img className='track-album' src={getFirstImage(track)} alt=""/>
 		<div className="track-content">
 			<h1>{getName(track)}</h1>
-			<p>{showArtists(getArtists(track))}</p>
+			<p>{getArtists(track).map((artist) => artist?.name).join(", ")}</p>
 		</div>
 	</div>
   )

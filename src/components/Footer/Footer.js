@@ -13,6 +13,13 @@ import { useDataLayerValue } from '../../helper';
 function Footer({ spotify }) {
   const [{ staticTrack }] = useDataLayerValue();
 
+	function getArtists(track) {
+		if (!track || !staticTrack.artists || track.artists.length <= 0) {
+			return [];
+		}
+		return track.artists;
+	}
+
   return (
 	<div className="footer">
 		<div className='footer-left'>
@@ -20,7 +27,7 @@ function Footer({ spotify }) {
 			<div className='footer-song-infomation'>
 				<h4>{staticTrack?.name}</h4>
 				<p>
-					{ staticTrack?.artists.map((artist) => artist.name).join(', ') }
+					{ getArtists(staticTrack).map((artist) => artist?.name ?? '').join(', ') }
 				</p>
 			</div>
 		</div>

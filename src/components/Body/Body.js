@@ -12,7 +12,7 @@ function Body({ spotify }) {
     if (!playlist || playlist.images.length <= 0) {
       return "No playlist to show";
     }
-    return staticPlaylist?.images[0].url;
+    return staticPlaylist?.images[0]?.url;
   }
 
   function getName(playlist) {

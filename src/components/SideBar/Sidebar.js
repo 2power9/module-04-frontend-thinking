@@ -9,7 +9,7 @@ import { useDataLayerValue } from '../../helper';
 import sideBarLogo from "../../assets/images/white-spotify-with-text.png";
 import './Sidebar.css';
 
-function Sidebar() {
+function Sidebar({ spotify }) {
   const [{ playlists }] = useDataLayerValue();
  
   return (
